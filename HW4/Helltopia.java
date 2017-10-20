@@ -46,10 +46,10 @@ public class Helltopia{
 	roomdescription[5] += "The screams are beginning to fade; Are they... still falling?\n\n\n ";
 	roomdescription[5] += "There are gates to the east and west. \n a large gate is to the north.\n the portal glows to the south.\n Where do you go?\n"; //hell
 	roomdescription[6] = "\n\nYou enter a room in which there is a large chalkboard that stretches upwards for miles. \n"; // think tank
-	roomdescription[6] += "The boad is covered in writing. There are philosophers writing frantically on the chalkboard \n";
-	roomdescription[6] += "There are scientists nearby conducting experiments, and mathmeticians arguing amongst themselves. \n";
+	roomdescription[6] += "The board is covered in writing. There are philosophers writing frantically on the chalkboard,\n";
+	roomdescription[6] += "scientists nearby conducting experiments, and mathmeticians arguing amongst themselves. \n";
 	roomdescription[6] += "great religious leaders from all known religions in all dimensions are crying in the corner. \n";
-	roomdescription[6] += "It appears as if they discovered the mathmatical equation to the universe!\n";
+	roomdescription[6] += "It appears as if they have discovered the mathmatical equation to the universe!\n";
 	roomdescription[6] +=	"But its taking quite some time to write it out...\n";
 	roomdescription[6] += "They spot you, then an elderly man approaches... He lets you know they created this room to keep themselves safe!\n \n";
 	roomdescription[6] += "Because you cannot contribute, and you have never read a philisophical book in your life, they ask you to leave.\n";// think tank
