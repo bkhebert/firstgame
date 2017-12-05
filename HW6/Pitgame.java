@@ -1,18 +1,26 @@
+// Barrington K Hebert
+// Dr. Summa
+//CSCI HW 6!! this is the good version!
+
 import java.util.Scanner; 
+import java.util.Random;
 public class Pitgame {
 	
+	static Random random = new Random();
+	static Scanner input = new Scanner(System.in);
 	static enum Status {CONTINUE, WON, LOST};
 	static Status gameStatus;
 	private static Hero myHero = new Hero("Hero", 100 , 15 + random.nextInt(6) , 3);
     private static Monster myMonster = new Monster("Goblin", 100 , 13 + random.nextInt(8), 3);
 	private static int heroXP = 0;
-	boolean battle = true;
+	static boolean battle = true;
 		
 	public static void main(String[] args){
 		// i began by initiating a few variables here and some objects
 	gameStatus = Status.CONTINUE;
 	
-	 Scanner input = new Scanner(System.in);
+	
+	 
 	int currentloc;
 	currentloc = 0;
 	Dungeon location = new Dungeon(0); 
@@ -151,7 +159,7 @@ public class Pitgame {
             choice2(choice);
             choice3(choice);
             choice4(choice);
-            if (choice !> 0 && !< 5){
+            if ((choice > 4) || (choice < 1)){
 					System.out.println("This is not an option. you must fight or DIE!");
 			}
             battle = checkStatus(battle);
@@ -243,6 +251,7 @@ public class Pitgame {
           {
               System.out.printf("\nYou got killed bro!\n");
 				gameStatus = Status.LOST;
+				battle = false;
           }
           //if monster health is 0 or below then exit loop
           else if (myMonster.getHealth() <= 0)
